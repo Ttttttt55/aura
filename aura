@@ -276,7 +276,7 @@ game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
    end,
 })
 local Button = MainTab:CreateButton({
-   Name = "Ufo aura,
+   Name = "Ufo aura",
    Callback = function()
    local args = {
     "Ufo",
