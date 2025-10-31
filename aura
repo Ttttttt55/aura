@@ -1,4 +1,1505 @@
-rgs = {
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+
+local MainWindow = Rayfield:CreateWindow({
+	Name = "Aura Craft🗿",
+	LoadingTitle = "Loading...",
+	LoadingSubtitle = "by WinX HUB",
+	ConfigurationSaving = {
+	   Enabled = false,
+	   FolderName = nil, -- Create a custom folder for your hub/game
+	   FileName = "McDonalds Hub"
+	},
+	Discord = {
+	   Enabled = false,
+	   Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+	   RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+	},
+	KeySystem = false, -- Set this to true to use our key system
+	KeySettings = {
+	   Title = "WinX HUB",
+	   Subtitle = "Key System",
+	   Note = "Key: McDonalds",
+	   FileName = "SiriusKey",
+	   SaveKey = false,
+	   GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+	   Key = "auracraftwinXHUB"
+	}
+ })
+Rayfield:Notify({
+   Title = "WinX HUB",
+   Content = "enjoy:)",
+   Duration = 2.5,
+   Image = nil,
+})
+
+
+local MainTab = MainWindow:CreateTab("Equip Aura free", nil) -- Title, Image
+local Button = MainTab:CreateButton({
+	Name = "Time aura ⏱️",
+	Callback = function(v)
+		local args = {
+    "Time",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+	end,
+ })
+local Button = MainTab:CreateButton({
+   Name = "Water aura 💧",
+   Callback = function()
+   local args = {
+    "water",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Fire aura 🔥",
+   Callback = function()
+   local args = {
+    "fire",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Wind aura💨",
+   Callback = function()
+   local args = {
+    "Wind",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Earth aura🌍",
+   Callback = function()
+   local args = {
+    "earth",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Plant aura🌱",
+   Callback = function()
+   local args = {
+    "Plant",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Cryogen aura🥶",
+   Callback = function()
+   local args = {
+    "Cryogen",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Glacier aura🧊",
+   Callback = function()
+   local args = {
+    "Glacier",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Dust aura🌪️",
+   Callback = function()
+   local args = {
+    "dust",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Spirit aura",
+   Callback = function()
+   local args = {
+    "Spirit",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Earthquake aura♒︎",
+   Callback = function()
+   local args = {
+    "Earthquake",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Snow aura❄️",
+   Callback = function()
+   local args = {
+    "snow",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Tornado auraᯤ",
+   Callback = function()
+   local args = {
+    "Tornado",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Spout aura🚰",
+   Callback = function()
+   local args = {
+    "Spout",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Magic aura🔮",
+   Callback = function()
+   local args = {
+    "magic",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Mystic aura",
+   Callback = function()
+   local args = {
+    "Mystic",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Shimmer aura✨",
+   Callback = function()
+   local args = {
+    "Shimmer",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Bubbles aura 🫧",
+   Callback = function()
+   local args = {
+    "Bubbles",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Ring of Fire💍🔥",
+   Callback = function()
+   local args = {
+    "Ring of Fire",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Sorcerer aura🧙‍♂️",
+   Callback = function()
+   local args = {
+    "Sorcerer",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Storm aura🌩️",
+   Callback = function()
+   local args = {
+    "Storm",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Blizzard aura❄️",
+   Callback = function()
+  local args = {
+    "Blizzard",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Hurricane aura🌪️",
+   Callback = function()
+   local args = {
+    "Hurricane",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Tsunami aura🌊",
+   Callback = function()
+  local args = {
+    "Tsunami",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Rainbow aura🌈",
+   Callback = function()
+   local args = {
+    "Rainbow",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Glitter aura",
+   Callback = function()
+   local args = {
+    "Glitter",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Energy aura",
+   Callback = function()
+   local args = {
+    "Energy",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Eternal Flame",
+   Callback = function()
+   local args = {
+    "Eternal Flame",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Lightning aura",
+   Callback = function()
+   local args = {
+    "Lightning",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Shockwave aura",
+   Callback = function()
+  local args = {
+    "Shockwave",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Plasma aura",
+   Callback = function()
+   local args = {
+    "Plasma",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Tree aura",
+   Callback = function()
+   local args = {
+    "Tree",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Swamp aura",
+   Callback = function()
+   local args = {
+    "Swamp",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Nature aura",
+   Callback = function()
+   local args = {
+    "Nature",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Rose aura",
+   Callback = function()
+   local args = {
+    "Rose",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Love aura",
+   Callback = function()
+   local args = {
+    "Love",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Cute aura",
+   Callback = function()
+   local args = {
+    "Cute",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+ local Button = MainTab:CreateButton({
+   Name = "Kawaii aura",
+   Callback = function()
+   local args = {
+    "Kawaii",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Air aura",
+   Callback = function()
+   local args = {
+    "Air",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Cloud aura",
+   Callback = function()
+   local args = {
+    "Cloud",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Harmony aura",
+   Callback = function()
+   local args = {
+    "Harmony",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Serenity aura",
+   Callback = function()
+   local args = {
+    "Serenity",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Sky aura",
+   Callback = function()
+   local args = {
+    "Sky",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Night aura",
+   Callback = function()
+   local args = {
+    "Night",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Twilight aura",
+   Callback = function()
+   local args = {
+    "Twilight",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Sunshine aura",
+   Callback = function()
+   local args = {
+    "Sunshine",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Space aura",
+   Callback = function()
+   local args = {
+    "Space",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Dark Matter aura",
+   Callback = function()
+   local args = {
+    "Dark Matter",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Gravity aura",
+   Callback = function()
+   local args = {
+    "Gravity",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Aurora Borealis aura",
+   Callback = function()
+   local args = {
+    "Aurora Borealis",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Star aura",
+   Callback = function()
+   local args = {
+    "Star",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Solar Wind aura",
+   Callback = function()
+   local args = {
+    "Solar Wind",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Supernova aura",
+   Callback = function()
+   local args = {
+    "Supernova",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "North Star aura",
+   Callback = function()
+   local args = {
+    "North Star",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Starlight aura",
+   Callback = function()
+   local args = {
+    "Starlight",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Galaxy aura",
+   Callback = function()
+   local args = {
+    "Galaxy",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Vortex aura",
+   Callback = function()
+   local args = {
+    "Vortex",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Portal aura",
+   Callback = function()
+   local args = {
+    "Portal",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Ender aura",
+   Callback = function()
+   local args = {
+    "Ender",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Rift aura",
+   Callback = function()
+   local args = {
+    "Rift",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Black Hole aura",
+   Callback = function()
+   local args = {
+    "Black Hole",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Undefined",
+   Callback = function()
+   local args = {
+    "Undefined",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Void aura",
+   Callback = function()
+   local args = {
+    "Void",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Butterfly aura",
+   Callback = function()
+   local args = {
+    "Butterfly",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Life aura",
+   Callback = function()
+   local args = {
+    "Life",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Fairy aura",
+   Callback = function()
+   local args = {
+    "Fairy",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Firefly aura",
+   Callback = function()
+   local args = {
+    "Firefly",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Nebula aura",
+   Callback = function()
+   local args = {
+    "Nebula",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Science aura",
+   Callback = function()
+   local args = {
+    "Science",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Rocket aura",
+   Callback = function()
+   local args = {
+    "Rocket",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Technology aura",
+   Callback = function()
+   local args = {
+    "Technology",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Metaverse aura",
+   Callback = function()
+   local args = {
+    "Metaverse",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Frostbite aura",
+   Callback = function()
+   local args = {
+    "Frostbite",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Trident aura",
+   Callback = function()
+   local args = {
+    "Trident aura",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Daisy aura",
+   Callback = function()
+   local args = {
+    "Daisy",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Ropes aura",
+   Callback = function()
+   local args = {
+    "Ropes",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "God aura",
+   Callback = function()
+   local args = {
+    "God",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Apollo aura",
+   Callback = function()
+   local args = {
+    "Apollo",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Zeus aura",
+   Callback = function()
+   local args = {
+    "Zeus",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+        end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Royalty aura",
+   Callback = function()
+   local args = {
+    "Royalty",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Heaven aura",
+   Callback = function()
+   local args = {
+    "Heaven",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+
+    local Button = MainTab:CreateButton({
+   Name = "Poseidon aura",
+   Callback = function()
+   local args = {
+    "Poseidon",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+    local Button = MainTab:CreateButton({
+   Name = "Angel aura",
+   Callback = function()
+   local args = {
+    "Angel",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+    local Button = MainTab:CreateButton({
+   Name = "Zenith aura",
+   Callback = function()
+   local args = {
+    "Zenith",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+    local Button = MainTab:CreateButton({
+   Name = "Beacon aura",
+   Callback = function()
+   local args = {
+    "Beacon",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+    local Button = MainTab:CreateButton({
+   Name = "Ai aura",
+   Callback = function()
+   local args = {
+    "Ai",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+    local Button = MainTab:CreateButton({
+   Name = "Power aura",
+   Callback = function()
+   local args = {
+    "Power",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Divine aura",
+   Callback = function()
+   local args = {
+    "Divine",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Super aura",
+   Callback = function()
+   local args = {
+    "Super",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Superhero aura",
+   Callback = function()
+   local args = {
+    "Superhero",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Jedi",
+   Callback = function()
+   local args = {
+    "Jedi",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Force aura",
+   Callback = function()
+   local args = {
+    "Force",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Waterfall aura",
+   Callback = function()
+   local args = {
+    "Waterfall",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Courage aura",
+   Callback = function()
+   local args = {
+    "Courage",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Ominous aura",
+   Callback = function()
+   local args = {
+    "Ominous",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Muse aura",
+   Callback = function()
+   local args = {
+    "Muse",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Radiance aura",
+   Callback = function()
+   local args = {
+    "Radiance",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Euphoria aura",
+   Callback = function()
+   local args = {
+    "Euphoria",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Inspiration aura ",
+   Callback = function()
+   local args = {
+    "Inspiration",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Unity aura",
+   Callback = function()
+   local args = {
+    "Unity",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Hypnotic aura",
+   Callback = function()
+   local args = {
+    "Hypnotic",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Phoenix aura",
+   Callback = function()
+   local args = {
+    "Phoenix",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Dragon aura",
+   Callback = function()
+   local args = {
+    "Dragon",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Aquatic aura",
+   Callback = function()
+   local args = {
+    "Aquatic",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Mermaid aura",
+   Callback = function()
+   local args = {
+    "Mermaid",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Buddha aura",
+   Callback = function()
+   local args = {
+    "Buddha",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Yin Yang aura",
+   Callback = function()
+   local args = {
+    "Yin Yang",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Monk aura",
+   Callback = function()
+   local args = {
+    "Monk",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Ninja aura",
+   Callback = function()
+   local args = {
+    "Ninja",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Samurai aura",
+   Callback = function()
+   local args = {
+    "Samurai",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Speed aura",
+   Callback = function()
+   local args = {
+    "Speed",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Flash aura",
+   Callback = function()
+   local args = {
+    "Flash",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Demon aura",
+   Callback = function()
+   local args = {
+    "Demon",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Rage aura",
+   Callback = function()
+   local args = {
+    "Rage",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Itadori aura",
+   Callback = function()
+   local args = {
+    "Itadori",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Ko aura",
+   Callback = function()
+   local args = {
+    "Ko",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Blossom aura",
+   Callback = function()
+   local args = {
+    "Blossom",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Calm aura",
+   Callback = function()
+   local args = {
+    "Calm",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Zen aura",
+   Callback = function()
+   local args = {
+    "Zen",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Breeze aura",
+   Callback = function()
+   local args = {
+    "Breeze",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Sleep aura",
+   Callback = function()
+   local args = {
+    "Sleep",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Tranquility aura",
+   Callback = function()
+   local args = {
+    "Tranquility",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Equinox aura",
+   Callback = function()
+   local args = {
+    "Equinox",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Third Eye aura",
+   Callback = function()
+   local args = {
+    "Third Eye",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Dream aura",
+   Callback = function()
+   local args = {
+    "Dream",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Rng aura",
+   Callback = function()
+   local args = {
+    "Rng",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Luck aura",
+   Callback = function()
+   local args = {
+    "Luck",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "VIP aura",
+   Callback = function()
+   local args = {
+    "VIP",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Crimson King aura",
+   Callback = function()
+   local args = {
+    "Crimson King",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Royal Power aura",
+   Callback = function()
+   local args = {
+    "Royal Power",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Knight aura",
+   Callback = function()
+   local args = {
+    "Knight",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Crown aura",
+   Callback = function()
+   local args = {
+    "Crown",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Emperor aura",
+   Callback = function()
+   local args = {
+    "Emperor",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Ares aura",
+   Callback = function()
+   local args = {
+    "Ares",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Wildfire aura",
+   Callback = function()
+   local args = {
+    "Wildfire",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Lava aura",
+   Callback = function()
+   local args = {
+    "Lava",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Volcano aura",
+   Callback = function()
+   local args = {
+    "Volcano",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Geyser aura",
+   Callback = function()
+   local args = {
+    "Geyser",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Magma aura",
+   Callback = function()
+   local args = {
+    "Magma",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Eruption aura",
+   Callback = function()
+   local args = {
+    "Eruption",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Crust aura ",
+   Callback = function()
+   local args = {
+    "Crust",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Infinite aura",
+   Callback = function()
+   local args = {
+    "Infinite",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Insane aura",
+   Callback = function()
+   local args = {
+    "Insane",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Abundance aura",
+   Callback = function()
+   local args = {
+    "Abundance",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Vision aura",
+   Callback = function()
+   local args = {
+    "Vision",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Cryptic aura",
+   Callback = function()
+   local args = {
+    "Cryptic",
+    "1"
+}
+game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "Relativity aura",
+   Callback = function()
+   local args = {
     "Relativity",
     "1"
 }
@@ -596,51 +2097,30 @@ game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
 local Button = MainTab:CreateButton({
    Name = "Cycle aura",
    Callback = function()
-   local args = {
-    "Cycle",
-    "1"
-}
-game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   -- The function that takes place when the button is pressed
    end,
 })
 local Button = MainTab:CreateButton({
-   Name = "Pure aura",
+   Name = "",
    Callback = function()
-   local args = {
-    "Pure",
-    "1"
-}
-game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   -- The function that takes place when the button is pressed
    end,
 })
 local Button = MainTab:CreateButton({
-   Name = "Hax aura",
+   Name = "",
    Callback = function()
-   local args = {
-    "Hax",
-    "1"
-}
-game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   -- The function that takes place when the button is pressed
    end,
 })
 local Button = MainTab:CreateButton({
-   Name = "Matrix aura",
+   Name = "",
    Callback = function()
-   local args = {
-    "Matrix",
-    "1"
-}
-game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   -- The function that takes place when the button is pressed
    end,
 })
 local Button = MainTab:CreateButton({
-   Name = "Depressed aura",
+   Name = "",
    Callback = function()
-   local args = {
-    "Depressed",
-    "1"
-}
-game:GetService("ReplicatedStorage").Remotes.Equip_AURA:FireServer(unpack(args))
+   -- The function that takes place when the button is pressed
    end,
 })
-
